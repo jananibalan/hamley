@@ -1,104 +1,125 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import Slider from "react-slick";
-var settings = {
-  dots: false,
-  infinite: false,
-  speed: 500,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  initialSlide: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        infinite: true,
-        dots: false,
-        initialSlide: 4
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2,
-        dots: false,
-        initialSlide: 4
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        dots: false,
-        initialSlide: 4
-      }
-    }
-  ]
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import "./icon.css";
+import Displaycard from "./displaycard";
+var res = {
+  0: {
+    items: 1
+  },
+  450: {
+    items: 1
+  },
+  600: {
+    items: 2
+  },
+  1000: {
+    items: 3
+  },
+  1200: {
+    items: 5
+  }
 };
-function Featurebrandelements(props) {
-  return (
-    <div className="col">
-      <a href={props.location}>
-        <img
-          src={props.url}
-          style={{ height: "450px", borderRadius: "3.5%", width: "250px" }}
-        />
-      </a>
-    </div>
-  );
-}
+
 function Featurebrand() {
   return (
     <div className="mt-3 pt-3 ml-4">
-      <h4>Featured brand</h4>
+      <h4 className="myfont">Featured brands</h4>
       <br></br>
-      <Slider {...settings}>
-        <Featurebrandelements
+      <OwlCarousel
+        className="owl-theme nav-btn"
+        loop={true}
+        startPosition={5}
+        slideBy={4}
+        margin={20}
+        nav={true}
+        dots={false}
+        autoplay={false}
+        items={4}
+        navText={[
+          "<span class='material-icons md-36 mycolor myborder-left'>keyboard_arrow_down</span>",
+          "<span class='material-icons md-36 mycolor myborder-right'>keyboard_arrow_down</span>"
+        ]}
+        responsive={res}
+      >
+        <Displaycard
           url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/lego_2108.jpg"
           location="https://www.hamleys.in/brand/lego.html"
         />
-        <Featurebrandelements
+        <Displaycard
           url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/Rowan.jpg"
-          location=""
+          location="https://www.hamleys.in/brand/rowan.html"
         />
-        <Featurebrandelements
+        <Displaycard
           url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/lol_2711.jpg"
-          location=""
+          location="https://www.hamleys.in/brand/lol-surprise.html"
         />
-        <Featurebrandelements
+        <Displaycard
           url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/barbie_2810_one.jpg"
-          location=""
+          location="https://www.hamleys.in/brand/barbie-buy-baby-dolls-toy-sets-online-hamleys-india.html"
         />
-        <Featurebrandelements
+        <Displaycard
           url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/nerf2810_one.jpg"
-          location=""
+          location="https://www.hamleys.in/brand/nerf.html"
         />
-        <Featurebrandelements
+        <Displaycard
           url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/mg_bran_1812.jpg"
-          location=""
+          location="https://www.hamleys.in/brand/mattel.html"
         />
-        <Featurebrandelements
+        <Displaycard
           url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/Fisherprice04122020.jpg"
-          location=""
+          location="https://www.hamleys.in/baby-fair.html"
         />
-        <Featurebrandelements
+        <Displaycard
           url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/Play-Doh_2810_one.jpg"
-          location=""
+          location="https://www.hamleys.in/brand/playdoh.html"
         />
-        <Featurebrandelements
+        <Displaycard
           url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/Hotwheels.jpg"
-          location=""
+          location="https://www.hamleys.in/brand/hot-wheels.html"
         />
-        <Featurebrandelements
+        <Displaycard
           url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/mothercare_featured_1409.jpg"
-          location=""
+          location="https://www.hamleys.in/brand/mothercare.html"
         />
-      </Slider>
+        <Displaycard
+          url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/X-Shot_2807.jpg"
+          location="https://www.hamleys.in/brand/x-shot.html"
+        />
+        <Displaycard
+          url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/Winfun.jpg"
+          location="https://www.hamleys.in/brand/winfun.html"
+        />
+        <Displaycard
+          url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/Melissa_2807.jpg"
+          location="https://www.hamleys.in/brand/melissa-doug.html"
+        />
+        <Displaycard
+          url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/Teamsterz_Logo_2807.jpg"
+          location="https://www.hamleys.in/brand/teamsterz.html"
+        />
+        <Displaycard
+          url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/Chicco_2807.jpg"
+          location="https://www.hamleys.in/brand/chicco.html"
+        />
+        <Displaycard
+          url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/Fuzzbuzz_2807.jpg"
+          location="https://www.hamleys.in/brand/fuzzbuzz.html"
+        />
+        <Displaycard
+          url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/Marvel.jpg"
+          location="https://www.hamleys.in/brand/marvel.html"
+        />
+        <Displaycard
+          url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/Rainbowcorns_2807.jpg"
+          location="https://www.hamleys.in/brand/rainbocorns.html"
+        />
+        <Displaycard
+          url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/BrandBanners/Kids_2807.jpg"
+          location="https://www.hamleys.in/brand/k-s-kids.html"
+        />
+      </OwlCarousel>
     </div>
   );
 }

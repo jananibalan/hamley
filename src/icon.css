@@ -1,0 +1,134 @@
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.mycolor {
+  color: #a8854a;
+  background: white;
+}
+
+.material-icons.myborder-left {
+  width: 100px;
+  height: 50px;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  transform: rotate(90deg);
+  margin-left: -45px;
+}
+.material-icons.myborder-right {
+  width: 100px;
+  height: 50px;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  transform: rotate(-90deg);
+  margin-right: -45px;
+}
+.owl-carousel .owl-nav {
+  display: none;
+  height: 0px;
+}
+.owl-carousel:hover .owl-nav {
+  display: block;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.owl-carousel .owl-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.owl-carousel .owl-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.myfont {
+  font-family: "Unna", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.myfont2 {
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.moveup {
+  transition: transform 0.5s;
+}
+.moveup:hover {
+  -moz-transform: translate(0px, -20px);
+  -ms-transform: translate(-2px, -20px);
+  -o-transform: translate(-2px, -2px);
+  -webkit-transform: translate(-2px, -2px);
+  transform: translate(0px, -20px);
+}
+
+.myborder2 {
+  border-right: 5px solid #a8854a;
+}
+.footer {
+  background-color: #7cc9d1;
+}
+.footer-bg {
+  background: url("https://www.hamleys.in/static/version1612899424/frontend/Embitel/Hamleys/en_US/images/footerbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.line-color {
+  background-image: linear-gradient(
+    to right,
+    rgba(179, 0, 0, 1),
+    rgba(179, 0, 0, 1),
+    rgba(179, 0, 0, 1),
+    rgba(179, 0, 0, 0.9),
+    rgba(179, 0, 0, 0.9),
+    rgba(179, 0, 0, 0.8),
+    rgba(179, 0, 0, 0.7),
+    rgba(179, 0, 0, 0.6),
+    rgba(179, 0, 0, 0.6),
+    rgba(179, 0, 0, 0.6),
+    rgba(179, 0, 0, 0.6),
+    rgba(179, 0, 0, 0.6),
+    rgba(179, 0, 0, 0.7),
+    rgba(179, 0, 0, 0.8),
+    rgba(179, 0, 0, 0.9),
+    rgba(179, 0, 0, 0.9),
+    rgba(179, 0, 0, 1),
+    rgba(179, 0, 0, 1),
+    rgba(179, 0, 0, 1),
+    rgba(179, 0, 0, 1)
+  );
+}
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.navbar-list {
+  list-style-type: none;
+}
+.navbar-a {
+  color: "white";
+  text-decoration: none;
+}
+.navbar a,
+.navbar-small {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.navbar-small {
+  min-height: 20px !important;
+}
+.search-block {
+  width: 600px;
+}

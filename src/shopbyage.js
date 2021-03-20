@@ -1,52 +1,34 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import Slider from "react-slick";
-
-var settings = {
-  dots: false,
-  infinite: false,
-  speed: 500,
-  slidesToShow: 8,
-  slidesToScroll: 1,
-  initialSlide: 0,
-  // nextArrow:<i className='material-icons md-24 md-dark">keyboard_arrow_right</i>,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 2,
-        infinite: true,
-        dots: false,
-        initialSlide: 0
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 2,
-        initialSlide: 2,
-        dots: false,
-        initialSlide: 0
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        dots: false,
-        initialSlide: 0
-      }
-    }
-  ]
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import "./icon.css";
+var res = {
+  0: {
+    items: 1
+  },
+  450: {
+    items: 3
+  },
+  600: {
+    items: 4
+  },
+  1000: {
+    items: 6
+  },
+  1400: {
+    items: 7
+  }
 };
 function Shopbyageelement(props) {
   return (
     <div className="col">
       <a href={props.location}>
-        <img src={props.url} style={{ borderRadius: "50%", width: "150px" }} />
+        <img
+          src={props.url}
+          style={{ borderRadius: "50%", width: "150px" }}
+          alt="..."
+        />
       </a>
     </div>
   );
@@ -55,9 +37,22 @@ function Shopbyageelement(props) {
 function Shopbyage() {
   return (
     <div className="ml-4 mt-3 pt-5">
-      <h4>Shop By age</h4>
+      <h4 className="myfont">Shop by age</h4>
       <br></br>
-      <Slider {...settings}>
+      <OwlCarousel
+        className="owl-theme"
+        loop={false}
+        margin={20}
+        nav={true}
+        dots={false}
+        autoplay={false}
+        items={4}
+        navText={[
+          "<span class='material-icons md-36 mycolor myborder-left'>keyboard_arrow_down</span>",
+          "<span class='material-icons md-36 mycolor myborder-right'>keyboard_arrow_down</span>"
+        ]}
+        responsive={res}
+      >
         <Shopbyageelement
           url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/AgeCarousel/mobile1.png"
           location="https://www.hamleys.in/toys-by-ages/0-11-months.html?product_list_order=high_to_low"
@@ -86,7 +81,8 @@ function Shopbyage() {
           url="https://www.hamleys.in/media/wysiwyg/Hamleys/Main_content_img/AgeCarousel/web7.png"
           location="https://www.hamleys.in/toys-by-ages/13-years.html"
         />
-      </Slider>
+        <br></br>
+      </OwlCarousel>
     </div>
   );
 }

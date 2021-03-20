@@ -7,6 +7,11 @@ import Trending from "./trending";
 import Deals from "./deals";
 import Newarrival from "./newarrivals";
 import Featurebrand from "./featurebrand";
+import Shopbycharacter from "./shopbycharacter";
+import Hamleyexclusive from "./hamleyexclusives";
+import Footer from "./footer";
+import Shopbycategory from "./shopbycategory";
+import Bestseller from "./bestseller";
 class Hamleys extends React.Component {
   render() {
     return (
@@ -18,6 +23,11 @@ class Hamleys extends React.Component {
         <Deals />
         <Newarrival />
         <Featurebrand />
+        <Bestseller />
+        <Hamleyexclusive />
+        <Shopbycategory />
+        <Shopbycharacter />
+        <Footer />
       </div>
     );
   }
