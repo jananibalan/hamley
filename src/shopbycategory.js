@@ -22,7 +22,7 @@ var res = {
 };
 function Shopbycategoryelements(props) {
   return (
-    <div className="col">
+    <div className="col box-effect">
       <a href={props.location}>
         <img
           src={props.url}

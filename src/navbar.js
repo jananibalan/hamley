@@ -2,9 +2,9 @@ import React from "react";
 import "./icon.css";
 function Navbar() {
   return (
-    <div class="sticky-top">
+    <div className="sticky-top">
       <nav
-        className="navbar navbar-expand-lg navbar-light "
+        className="navbar navbar-expand-lg navbar-light myfont"
         style={{ backgroundColor: "#A10601" }}
       >
         <a className="navbar-brand" href="#">
@@ -40,7 +40,7 @@ function Navbar() {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav dropdown">
+          <ul className="navbar-nav dropdown">
             <a
               style={{ color: "white", textDecoration: "none" }}
               className="nav-link dropdown-toggle "
@@ -128,8 +128,8 @@ function Navbar() {
                 aria-labelledby="navbarDropdown"
                 style={{ backgroundColor: "rgba(120, 5, 5,0.9)" }}
               >
-                <div class="d-flex ml-5 mr-5 pr-5 col-12 w-100 h-100">
-                  <ul class="navbar-list">
+                <div className="d-flex ml-5 mr-5 pr-5 col-12 w-100 h-100">
+                  <ul className="navbar-list">
                     <li>
                       <a
                         style={{ color: "white", textDecoration: "none" }}
@@ -223,7 +223,7 @@ function Navbar() {
                     </li>
                     <div className="dropdown-divider"></div>
                   </ul>
-                  <ul class="navbar-list">
+                  <ul className="navbar-list">
                     <li>
                       <a
                         style={{ color: "white", textDecoration: "none" }}
@@ -304,8 +304,8 @@ function Navbar() {
                 aria-labelledby="navbarDropdown"
                 style={{ backgroundColor: "rgba(120, 5, 5,0.9)" }}
               >
-                <div class="m-list-box">
-                  <ul class="navbar-list">
+                <div className="m-list-box">
+                  <ul className="navbar-list">
                     <li>
                       <a
                         style={{ color: "white", textDecoration: "none" }}
@@ -403,7 +403,7 @@ function Navbar() {
               type="search"
               placeholder="Search"
               aria-label="Search"
-              style={{ backgroundColor: "#670501" }}
+              style={{ backgroundColor: "#670501", width: "200px" }}
             />
             <button
               className="btn my-2 my-sm-0 rounded-pill"
@@ -416,18 +416,134 @@ function Navbar() {
               />
             </button>
           </form>
+          <ul className="navbar-nav dropdown">
+            <a
+              href=""
+              className="nav-link dropdown-toggle "
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="true"
+            >
+              <img
+                src="https://www.hamleys.in/static/version1612899424/frontend/Embitel/Hamleys/en_US/images/wishlist_icon.png"
+                alt=""
+                height="40px"
+              />
+            </a>
+            <div
+              className="dropdown-menu dropdown-menu-right text-center px-3"
+              aria-labelledby="navbarDropdown"
+              style={{ backgroundColor: "rgba(120, 5, 5,0.9)", width: "200px" }}
+            >
+              <div className="dropdown-cont">
+                <p className="text-white">
+                  Please Login / Sign up to see your Wishlist
+                </p>
+                <a
+                  className="btn rounded-pill btn-md"
+                  href="https://www.hamleys.in/customer/account/login/referer/aHR0cHM6Ly93d3cuaGFtbGV5cy5pbi93aXNobGlzdC8%2C/"
+                  style={{
+                    backgroundColor: "#670501",
+                    color: "#AA955E",
+                    border: "2px solid #AA955E"
+                  }}
+                >
+                  Sign in
+                </a>
+              </div>
+            </div>
+          </ul>
+          <ul className="navbar-nav dropdown">
+            <a
+              href=""
+              className="nav-link dropdown-toggle "
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="true"
+            >
+              <img
+                src="https://www.hamleys.in/static/version1612899424/frontend/Embitel/Hamleys/en_US/images/myaccount_icon.png"
+                alt=""
+                height="40px"
+              />
+            </a>
+            <div
+              className="dropdown-menu dropdown-menu-right text-center px-3"
+              aria-labelledby="navbarDropdown"
+              style={{
+                backgroundColor: "rgba(120, 5, 5,0.9)",
+                width: "200px"
+              }}
+            >
+              <div className="dropdown-cont">
+                <span className="text-white">
+                  Don't have an account?{" "}
+                  <a
+                    className="text-white"
+                    style={{ textDecoration: "underline" }}
+                    href="https://www.hamleys.in/customer/account/login/"
+                  >
+                    Register now
+                  </a>
+                </span>
+
+                <a
+                  className="btn rounded-pill btn-md mt-2"
+                  href="https://www.hamleys.in/customer/account/login/referer/aHR0cHM6Ly93d3cuaGFtbGV5cy5pbi93aXNobGlzdC8%2C/"
+                  style={{
+                    backgroundColor: "#670501",
+                    color: "#AA955E",
+                    border: "2px solid #AA955E"
+                  }}
+                >
+                  Sign in
+                </a>
+              </div>
+            </div>
+          </ul>
+
+          <ul className="navbar-nav dropdown">
+            <a
+              href=""
+              className="nav-link dropdown-toggle "
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="true"
+            >
+              <img
+                src="https://www.hamleys.in/static/version1612899424/frontend/Embitel/Hamleys/en_US/images/cart_icon.png"
+                alt=""
+                height="40px"
+              />
+            </a>
+            <div
+              className="dropdown-menu dropdown-menu-right text-center px-3"
+              aria-labelledby="navbarDropdown"
+              style={{
+                width: "350px"
+              }}
+            >
+              <p>You have no items in your shopping cart</p>
+            </div>
+          </ul>
         </div>
       </nav>
       {/* Second navbar */}
       <nav
-        class="navbar navbar-expand-md navbar-light navbar-small"
+        className="navbar navbar-expand-md navbar-light navbar-small card-inside-text"
         style={{ backgroundColor: "#A8854A" }}
       >
-        <div class="navbar-collapse collapse" id="navbar2">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+        <div className="navbar-collapse collapse" id="navbar2">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item active">
               <a
-                class="nav-link"
+                className="nav-link"
                 href="#"
                 style={{
                   color: "white",
@@ -438,9 +554,9 @@ function Navbar() {
                 Download Hamleys Android App
               </a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link"
+                className="nav-link"
                 href="https://www.hamleys.in/customer/account/login/"
                 style={{
                   color: "white",
@@ -451,9 +567,9 @@ function Navbar() {
                 Sign in
               </a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link"
+                className="nav-link"
                 href="https://bluedart.com/tracking"
                 style={{
                   color: "white",
@@ -464,9 +580,9 @@ function Navbar() {
                 Track my order
               </a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link"
+                className="nav-link"
                 href="https://www.hamleys.in/customer/account/login/referer/aHR0cHM6Ly93d3cuaGFtbGV5cy5pbi9zYWxlcy9vcmRlci9oaXN0b3J5Lw%2C%2C/"
                 style={{
                   color: "white",
@@ -477,9 +593,9 @@ function Navbar() {
                 Cancel/Return your order
               </a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link"
+                className="nav-link"
                 href="https://www.hamleys.in/contact-us"
                 style={{
                   color: "white",

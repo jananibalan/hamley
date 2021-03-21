@@ -2,23 +2,26 @@ import React from "react";
 import "./icon.css";
 function Buycard(props) {
   return (
-    <div className="d-flex shadow-phase">
-      <div class="card">
-        <div class="inner-card ">
+    <div
+      className="d-flex box-effect"
+      style={{ width: "18rem", height: "100%" }}
+    >
+      <div className="card">
+        <div className="inner-card card-inside-text">
           {" "}
-          <img src={props.url} class="img-fluid rounded" />
-          <div class="d-flex justify-content-between align-items-center mt-3 px-2">
-            <h6>{props.title} </h6>{" "}
-            <span class="heart">
-              <i class="fa fa-heart"></i>
+          <img src={props.url} className="img-fluid rounded" alt="" />
+          <div className="d-flex justify-content-between align-items-center mt-3 px-2">
+            <h6 style={{ fontWeight: "bold" }}>{props.title} </h6>{" "}
+            <span className="heart">
+              <i className="fa fa-heart"></i>
             </span>
           </div>
-          <div class="mt-2 px-2">
+          <div className="mt-2 px-2">
             {" "}
             <p>Age-{props.age}</p>
             <p>{props.category}</p>{" "}
           </div>
-          <div class="px-2">
+          <div className="px-2 myf-2">
             <p style={{ color: "red" }}>
               {props.prize}
               {"/-  "}
@@ -34,13 +37,13 @@ function Buycard(props) {
             <p>Save{props.save}%</p>
           </div>{" "}
           <button
-            class="btn btn-block px-3 col"
+            className="btn btn-block px-3 col"
             style={{ backgroundColor: "#940000", color: "white" }}
           >
             Add to cart
           </button>{" "}
           <button
-            class="btn btn-block px-3 col"
+            className="btn btn-block px-3 col"
             style={{ backgroundColor: "#940000", color: "white" }}
           >
             Buy Now

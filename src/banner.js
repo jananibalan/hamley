@@ -3,7 +3,7 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "./icon.css";
-function Adbanner() {
+function Banner() {
   return (
     <OwlCarousel
       className="owl-theme nav-btn"
@@ -50,4 +50,4 @@ function Adbanner() {
     </OwlCarousel>
   );
 }
-export default Adbanner;
+export default Banner;

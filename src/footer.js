@@ -1,12 +1,12 @@
 import React from "react";
 function Footer() {
   return (
-    <div className="footer ">
-      <div className="footer-bg">
-        <div className="mt-3 ml-5">
+    <div className="footer">
+      <div className="footer-bg ">
+        <div className="mt-3 ml-5 ">
           <section className="pt-5">
-            <div className="row clearfix">
-              <div class="col float-left">
+            <div className="row clearfix card-inside-text">
+              <div className="col float-left">
                 <img
                   className=" lazyloaded"
                   alt="image"
@@ -14,22 +14,22 @@ function Footer() {
                   src="https://www.hamleys.in/media/wysiwyg/Hamleys/Footer_Images/footerlogo.png"
                 />
               </div>
-              <div class="col-4" />
+              <div className="col-4" />
               <aside className="col float-right">
                 <p>Subscribe to hear about new products and stores.</p>
 
-                <form class="form-inline mb-3">
-                  <div class="control mb-3">
+                <form className="form-inline mb-3">
+                  <div className="control mb-3">
                     <input
                       type="text"
-                      class="form-control rounded-pill"
+                      className="form-control rounded-pill"
                       placeholder="Email"
                       aria-label="Recipient's username"
                       aria-describedby="button-addon2"
                     />
-                    <span class="">
+                    <span className="">
                       <button
-                        class="btn ml-2 rounded-pill mybutton"
+                        className="btn ml-2 rounded-pill mybutton"
                         style={{ backgroundColor: "#940000", color: "white" }}
                       >
                         {" "}
@@ -40,10 +40,12 @@ function Footer() {
                 </form>
               </aside>
             </div>
-            <div class="row myfont">
-              <aside class="col">
-                <article class="mr-md-4 myfont2">
-                  <h5 class="title">Hamleys</h5>
+            <div className="row card-inside-text myf-2">
+              <aside className="col">
+                <article className="mr-md-4 ">
+                  <h5 className="title myf-2" style={{ fontWeight: "bold" }}>
+                    Hamleys
+                  </h5>
                   <div>
                     <a
                       href=""
@@ -78,9 +80,11 @@ function Footer() {
                   </div>
                 </article>
               </aside>
-              <aside class="col">
-                <article class="myfont2">
-                  <h5 class="title">Help stuff</h5>
+              <aside className="col">
+                <article className="">
+                  <h5 className="title myf-2" style={{ fontWeight: "bold" }}>
+                    Help stuff
+                  </h5>
                   <div>
                     <a
                       href=""
@@ -123,9 +127,11 @@ function Footer() {
                   </div>
                 </article>
               </aside>
-              <aside class="col">
-                <article class="mr-md-4 myfont2">
-                  <h5 class="title">Quick links</h5>
+              <aside className="col">
+                <article className="mr-md-4">
+                  <h5 className="title myf-2" style={{ fontWeight: "bold" }}>
+                    Quick links
+                  </h5>
                   <div>
                     <a
                       href=""
@@ -160,40 +166,40 @@ function Footer() {
                   </div>
                 </article>
               </aside>
-              <div class="col-5" />
+              <div className="col-5" />
 
-              <div class="col">
+              <div className="col">
                 <img
-                  class="h-25"
+                  className="h-25"
                   alt="image"
                   data-src="https://www.hamleys.in/media/wysiwyg/Hamleys/Footer_Images/Qualitypromise.png"
                   src="https://www.hamleys.in/media/wysiwyg/Hamleys/Footer_Images/Qualitypromise.png"
                 />
-                <p class="col">Quality promise</p>
+                <p className="col">Quality promise</p>
               </div>
-              <div class="col">
+              <div className="col">
                 <img
-                  class="h-25"
+                  className="h-25"
                   alt="image"
                   data-src="https://www.hamleys.in/media/wysiwyg/Hamleys/Footer_Images/freedelivery.png"
                   src="https://www.hamleys.in/media/wysiwyg/Hamleys/Footer_Images/freedelivery.png"
                 />
-                <p class="col">Free delivery</p>
+                <p className="col">Free delivery</p>
               </div>
-              <div class="col">
+              <div className="col">
                 <img
-                  class="h-25"
+                  className="h-25"
                   data-src="https://www.hamleys.in/media/wysiwyg/Hamleys/Footer_Images/return_options.png"
                   src="https://www.hamleys.in/media/wysiwyg/Hamleys/Footer_Images/return_options.png"
                 />
-                <p class="col">Easy Return</p>
+                <p className="col">Easy Return</p>
               </div>
             </div>
 
-            <div class="row clearfix">
-              <div class="col-10 float-left" />
+            <div className="row clearfix">
+              <div className="col-10 float-left" />
 
-              <div class="col float-right">
+              <div className="col float-right">
                 <img
                   src="https://www.hamleys.in/media/wysiwyg/Hamleys/Footer_Images/footer-man.png"
                   alt=""
@@ -201,33 +207,35 @@ function Footer() {
               </div>
             </div>
             <div>
-              <div className="row clear-fix bottom-0">
-                <div class="col-3 float-left">
-                  <p class="text-white">© Hamleys 2021 All Rights Reserved.</p>
+              <div className="row clear-fix bottom-0 card-inside-text">
+                <div className="col-3 float-left">
+                  <p className="text-white">
+                    © Hamleys 2021 All Rights Reserved.
+                  </p>
                 </div>
-                <div class="col-7" />
-                <div class="col float-right">
-                  <p class="text-white-50 mb-2">follow us at:</p>
+                <div className="col-7" />
+                <div className="col float-right">
+                  <p className="text-white-50 mb-2">follow us at:</p>
 
-                  <a href="#" class="btn">
+                  <a href="#" className="btn">
                     <img
                       src="https://www.hamleys.in/media/wysiwyg/Hamleys/Footer_Images/facebook.png"
                       alt=""
                     />
                   </a>
-                  <a href="#" class="btn">
+                  <a href="#" className="btn">
                     <img
                       src="https://www.hamleys.in/media/wysiwyg/Hamleys/Footer_Images/twitter.png"
                       alt=""
                     />
                   </a>
-                  <a href="#" class="btn">
+                  <a href="#" className="btn">
                     <img
                       src="https://www.hamleys.in/media/wysiwyg/Hamleys/Footer_Images/insta.png"
                       alt=""
                     />
                   </a>
-                  <a href="#" class="btn">
+                  <a href="#" className="btn">
                     <img
                       src="https://www.hamleys.in/media/wysiwyg/Hamleys/Footer_Images/youtube.png"
                       alt=""

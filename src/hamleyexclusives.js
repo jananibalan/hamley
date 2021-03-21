@@ -88,15 +88,7 @@ function Hamleyexclusive() {
           originalprize=""
           save=" "
         />
-        <Buycard
-          url="https://www.hamleys.in/media/catalog/product/cache/b0d373bf59d04d01353155bb036901a7/4/9/490658076-1.jpg"
-          title="Hamleys London Double Decker B..."
-          age="3Y+"
-          category="Vehicles, Tracksets & R..."
-          prize="599"
-          originalprize="799"
-          save=" 25"
-        />
+
         <Buycard
           url="https://www.hamleys.in/media/catalog/product/cache/b0d373bf59d04d01353155bb036901a7/4/9/491490265.jpg"
           title="Hamleys Blow In The Dark Actio..."

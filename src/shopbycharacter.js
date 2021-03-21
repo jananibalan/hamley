@@ -42,7 +42,7 @@ function Shopbycharacterelements(props) {
           />
         </a>
       </div>
-      <h6 className="text-center">{props.title}</h6>
+      <h6 className="text-center card-inside-text">{props.title}</h6>
     </div>
   );
 }

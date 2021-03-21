@@ -31,7 +31,10 @@ function Bestsellerelement(props) {
 }
 function Lineelement(props) {
   return (
-    <h4 class="text-center text-white">
+    <h4
+      className="text-center text-white card-inside-text"
+      style={{ fontSize: "20px", fontWeight: "bold" }}
+    >
       <a
         href={props.location}
         style={{ textDecoration: "none", color: "white" }}

@@ -1,7 +1,7 @@
 import React from "react";
 function Displaycard(props) {
   return (
-    <div className="col">
+    <div className="col box-effect">
       <a href={props.location}>
         <img
           src={props.url}

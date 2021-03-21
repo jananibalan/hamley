@@ -21,9 +21,9 @@ class Hamleys extends React.Component {
         <Shopbyage />
         <Trending />
         <Deals />
+        <Bestseller />
         <Newarrival />
         <Featurebrand />
-        <Bestseller />
         <Hamleyexclusive />
         <Shopbycategory />
         <Shopbycharacter />
